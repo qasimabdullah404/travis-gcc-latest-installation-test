@@ -7,8 +7,7 @@ python:
   - '3.7'
 
 before_install:
-  - sudo apt-get install -yq --allow-downgrades libc6=2.31-0ubuntu9.2 libc6-dev=2.31-0ubuntu9.2
-  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install build-essential automake autoconf autoconf-archive libtool-bin texinfo yasm gcc g++ ninja-build cppcheck valgrind doxygen graphviz lcov -o Debug::pkgProblemResolver=yes
+  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install build-essential gcc g++
 
 
 script:
