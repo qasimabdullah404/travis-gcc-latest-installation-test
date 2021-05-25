@@ -7,8 +7,7 @@ python:
   - '3.7'
 
 before_install:
-  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install build-essential gcc g++
-
+  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install build-essential gcc-7 g++-7
 
 script:
   - gcc --version
