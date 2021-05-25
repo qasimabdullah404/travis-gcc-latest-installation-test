@@ -7,9 +7,9 @@ python:
   - '3.7'
 
 install:
-  - sudo apt-update
+  - sudo apt update
   - sudo apt install -y build-essential
-  - sudo apt-update
+  - sudo apt update
 
 script:
   - gcc --version
