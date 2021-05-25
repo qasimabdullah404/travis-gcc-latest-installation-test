@@ -1,0 +1,12 @@
+os: linux
+
+language: cpp
+
+sudo: false
+
+before_install:
+  - sudo apt-update
+  - sudo apt install -y build-essential
+
+script:
+  - gcc --version
